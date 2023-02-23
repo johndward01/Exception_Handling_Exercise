@@ -8,52 +8,166 @@ namespace Exception_Handling_Exercise
     {
         public static void ArithmeticExample()
         {
-            throw new ArithmeticException();
+            try
+            {
+                throw new ArithmeticException();
+            }
+            catch (ArithmeticException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         public static void ArrayTypeMismatchExample()
         {
-            throw new ArrayTypeMismatchException();
+            try
+            {
+                throw new ArrayTypeMismatchException();
+            }
+            catch (ArrayTypeMismatchException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         public static void DivideByZeroExample()
         {
-            throw new DivideByZeroException();
+            try
+            {
+                throw new DivideByZeroException();
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         public static void IndexOutOfRangeExample()
         {
-            throw new IndexOutOfRangeException();
+            try
+            {
+                throw new IndexOutOfRangeException();
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         public static void InvalidCastExample()
         {
-            throw new InvalidCastException();
+            try
+            {
+                throw new InvalidCastException();
+            }
+            catch (InvalidCastException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         public static void NullReferenceExample()
         {
-            throw new NullReferenceException();
+            try
+            {
+                throw new NullReferenceException();
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         public static void OutOfMemoryExample()
         {
-            throw new OutOfMemoryException();
+            try
+            {
+                throw new OutOfMemoryException();
+            }
+            catch (OutOfMemoryException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         public static void OverflowExample()
         {
-            throw new OverflowException();
+            try
+            {
+                throw new OverflowException();
+            }
+            catch (OverflowException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         public static void StackOverflowExample()
         {
-            throw new StackOverflowException();
+            try
+            {
+                throw new StackOverflowException();
+            }
+            catch (StackOverflowException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         public static void TypeInitializationExample()
         {
-            throw new TypeInitializationException("FullTypeNameExample", new ArgumentOutOfRangeException());
+            try
+            {
+                throw new TypeInitializationException("FullTypeNameExample", new ArgumentOutOfRangeException());
+            }
+            catch (ArgumentOutOfRangeException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (TypeInitializationException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }

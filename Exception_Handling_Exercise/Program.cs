@@ -8,9 +8,12 @@ namespace Exception_Handling_Exercise
         {
             // Create a try/catch block to handle all of the exceptions!!!
 
+            // RUN THE APPLICATION WITHOUT DEBUGGING! (Ctrl + F5)
+
 
             // TODO: Handle the ArithmeticException
             Methods.ArithmeticExample();
+
 
             // TODO: Handle the ArrayTypeMismatchException
             Methods.ArrayTypeMismatchExample();
